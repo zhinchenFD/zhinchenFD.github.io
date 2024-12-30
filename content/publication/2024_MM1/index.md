@@ -1,5 +1,5 @@
 ---
-title: "[AAAI'23]Resolving Task Confusion in Dynamic Expansion Architectures for Class Incremental Learning"
+title: "[MM'24]Decoder Pre-Training with only Text for Scene Text Recognition"
 
 # Authors
 
@@ -8,20 +8,21 @@ title: "[AAAI'23]Resolving Task Confusion in Dynamic Expansion Architectures for
 # and it will be replaced with their full name and linked to their profile.
 
 authors:
-- Bingchen Huang
+- Shuai Zhao
+- Yongkun Du
 - Zhineng Chen
-- Peng Zhou
-- Jiayin Chen
-- Zuxuan Wu
+- Yu-Gang Jiang
+
 
 
 # Author notes (optional)
 
 author_notes:
-  - 
+  - 'Equal contribution'
+  - 'Equal contribution'
   - 'Corresponding author'
 
-date: '2023-06-26T00:00:00Z'
+date: '2024-7-16T00:00:00Z'
 # Schedule page publish date (NOT publication's date).
 # publishDate: '2024-03-24T00:00:00Z'
 # publishDate: 
@@ -36,8 +37,8 @@ publication_types: ['paper-conference']
 
 # Publication name and optional abbreviated publication name.
 
-publication: In *Association for the Advancement of Artificial Intelligence (AAAI) 2023*
-publication_short: In *Association for the Advancement of Artificial Intelligence (AAAI) 2023*
+publication: In *ACM International Conference on Multimedia (MM) 2024*
+publication_short: In *ACM International Conference on Multimedia (MM) 2024*
 
 abstract: 
 
@@ -59,8 +60,8 @@ featured: true
 
 # url: http://example.org
 
-url_pdf: 'https://ojs.aaai.org/index.php/AAAI/article/view/25170'
-url_code: 'https://github.com/YellowPancake/TCIL'
+url_pdf: 'https://arxiv.org/abs/2408.05706'
+url_code: 'https://github.com/Topdu/OpenOCR'
 url_dataset: ''
 url_poster: ''
 url_project: ''
@@ -103,4 +104,4 @@ url_video: ''
 
 # slides: example
 ---
-Recently, regression-based methods, which predict parameterized text shapes for text localization, have gained popularity in scene text detection. However, the existing parameterized text shape methods still have limitations in modeling arbitrary-shaped texts due to ignoring the utilization of text-specific shape information. Moreover, the time consumption of the entire pipeline has been largely overlooked, leading to a suboptimal overall inference speed. To address these issues, we first propose a novel parameterized text shape method based on low-rank approximation. Unlike other shape representation methods that employ data-irrelevant parameterization, our approach utilizes singular value decomposition and reconstructs the text shape using a few eigenvectors learned from labeled text contours. By exploring the shape correlation among different text contours, our method achieves consistency, compactness, simplicity, and robustness in shape representation. Next, we propose a dual assignment scheme for speed acceleration. It adopts a sparse assignment branch to accelerate the inference speed, and meanwhile, provides ample supervised signals for training through a dense assignment branch. Building upon these designs, we implement an accurate and efficient arbitrary-shaped text detector named LRANet. Extensive experiments are conducted on several challenging benchmarks, demonstrating the superior accuracy and efficiency of LRANet compared to state-of-the-art methods. Code is available at: https://github.com/ychensu/LRANet.git
+Scene text recognition (STR) pre-training methods have achieved remarkable progress, primarily relying on synthetic datasets. However, the domain gap between synthetic and real images poses a challenge in acquiring feature representations that align well with images on real scenes, thereby limiting the performance of these methods. We note that vision-language models like CLIP, pre-trained on extensive real image-text pairs, effectively align images and text in a unified embedding space, suggesting the potential to derive the representations of real images from text alone. Building upon this premise, we introduce a novel method named Decoder Pre-training with only text for STR (DPTR). DPTR treats text embeddings produced by the CLIP text encoder as pseudo visual embeddings and uses them to pre-train the decoder. An Offline Randomized Perturbation (ORP) strategy is introduced. It enriches the diversity of text embeddings by incorporating natural image embeddings extracted from the CLIP image encoder, effectively directing the decoder to acquire the potential representations of real images. In addition, we introduce a Feature Merge Unit (FMU) that guides the extracted visual embeddings focusing on the character foreground within the text image, thereby enabling the pre-trained decoder to work more efficiently and accurately. Extensive experiments across various STR decoders and language recognition tasks underscore the broad applicability and remarkable performance of DPTR, providing a novel insight for STR pre-training. Code is available at https://github.com/Topdu/OpenOCR
