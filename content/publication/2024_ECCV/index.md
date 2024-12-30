@@ -64,8 +64,8 @@ featured: true
 
 # url: http://example.org
 
-url_pdf: ''
-url_code: ''
+url_pdf: 'https://arxiv.org/abs/2409.08260'
+url_code: 'https://github.com/Nnn-s/CaTdiffusion/'
 url_dataset: ''
 url_poster: ''
 url_project: ''
