@@ -50,6 +50,10 @@ sections:
       title: 新闻
       subtitle: 
       text: >+
+          - 2025.03：🎉祝贺郑天伦同学获得[电子学会优秀硕士论文奖](https://mp.weixin.qq.com/s/IUWhbOGhE0nqzTsk4u7Wyg)
+
+          - 2025.02：🎉祝贺杜永坤同学的论文被IEEE TPAMI接收
+
           - 2024.12：🎉祝贺杜永坤同学的论文被IEEE TPAMI接收
 
           - 2024.12：🎉祝贺杜永坤、苏宇辰同学的论文被AAAI 2025接收
